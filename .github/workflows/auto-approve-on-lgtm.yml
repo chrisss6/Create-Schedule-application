@@ -21,13 +21,10 @@ jobs:
 
   auto_approve:
     needs: lgtm
-    if: >-
-          contains(github.event.comment.body, 'lgtm')
-          || contains(github.event.review.body, 'lgtm')
     runs-on: ubuntu-latest
     steps:
       - name: Auto approve PR on LGTM
         uses: hmarr/auto-approve-action@v3
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.BOT_PAT }} 
           pull-request-number: ${{ github.event.issue.number }}
