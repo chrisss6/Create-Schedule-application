@@ -1,2 +1,2 @@
-# Creat-Schedule-application
+# Create-Schedule-application
 アプリ作ってみる
