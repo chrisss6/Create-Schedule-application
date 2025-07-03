@@ -6,7 +6,7 @@ on:
 
 jobs:
   auto_approve:
-    if: contains(toLowerCase(github.event.comment.body), 'lgtm') && github.event.issue.pull_request
+    if: contains(github.event.comment.body, 'LGTM') && github.event.issue.pull_request
     runs-on: ubuntu-latest
     steps:
       - uses: hmarr/auto-approve-action@v3
