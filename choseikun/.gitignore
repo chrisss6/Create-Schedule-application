@@ -1,0 +1,54 @@
+# Pythonの自動生成ファイル
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# 仮想環境（venv, pipenv, poetry等）
+venv/
+env/
+ENV/
+.venv/
+.Python
+
+# 環境変数や個人設定ファイル
+*.env
+*.env.*
+.envrc
+*.secret
+
+# SQLiteやローカルDB
+*.sqlite3
+*.db
+
+# VSCode・エディタ設定
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS・Windowsのクズ
+.DS_Store
+Thumbs.db
+
+# Docker関連（追加が必要なら）
+*.log
+docker-compose.override.yml
+
+# ログファイル・一時ファイル
+*.log
+*.bak
+*.swp
+*.tmp
+
+# pytest/coverageなどテスト生成物
+htmlcov/
+.tox/
+.pytest_cache/
+.coverage
+coverage.xml
+
+# mypy/Pylint等
+.mypy_cache/
+.pyre/
+.pytype/

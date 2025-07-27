@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+    <meta charset='UTF-8'>
+    <title>日程調整アプリ</title>
+</head>
+<body>
+    <h1>イベント登録</h1>
+    <form method='POST'>
+        題名: <input type='text' name='title'>
+        日付: <input type='date' name='date'>
+        <button type='submit'>追加</button>
+    </form>
+    <h2>イベント一覧</h2>
+    <ul>
+        {% for event in events %}
+            <li>{{ event.title }} - {{ event.date }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
